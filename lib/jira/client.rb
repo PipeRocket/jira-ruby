@@ -112,7 +112,7 @@ module JIRA
     end
 
     def Field # :nodoc:
-      JIRA::Resource::Field.new(self)
+      JIRA::Resource::FieldFactory.new(self)
     end
 
     # HTTP methods without a body
